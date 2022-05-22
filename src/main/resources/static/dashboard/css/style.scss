@@ -1,0 +1,220 @@
+$bcgColor: #F8F9FA;
+$hoverColor: #f8f8f8;
+$white: #FFF;
+$grayBlue: #242424;
+$purple: #7f74ff;
+$purpleHover: #7268e1;
+$salmon: #FF6E6E;
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+.content{
+  height: 100vh;
+}
+body{
+  background-color: $bcgColor;
+}
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0%;
+}
+.btn{
+  width: 100%;
+}
+.lg{
+  padding: 0.375rem 0;
+}
+.lgi{
+  background: none;
+  border: none;
+}
+.profile{
+  display: flex;
+  height: 15vh;
+}
+.btn-profile{
+  background-color: $white;
+  color: $grayBlue;
+  border: none;
+  border-radius: 0.6rem;
+  box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
+  &:hover{
+    background-color: $hoverColor;
+    box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-color: $white;
+  }
+  &:active{
+    background-color: $hoverColor;
+    color: $grayBlue;
+    border: none;
+    border-color: $white;
+    box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1) !important;
+  }
+  &:focus{
+    background-color: $white;
+    color: $grayBlue;
+    border: none;
+    border-color: $white;
+    box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+.navbar{
+  font-weight: 700;
+  padding: 1% 0;
+}
+.notifications{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.notifications > .list-group{
+  margin: 0.5% 0;
+}
+.add{
+  padding: 5%;
+  font-size: 0.7vw;
+  font-weight: bold;
+  border-radius: 0.6rem;
+  color: $purple;
+  border-color: $purple;
+}
+.add:hover{
+  background-color: $purple;
+}
+.tab{
+  padding: 2% 4%;
+  font-size: 0.7vw;
+  font-weight: bold;
+  border-radius: 0.6rem;
+  color: $white;
+  background: none;
+  border: none;
+  &:hover{
+    box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.016);
+    border: none;
+    border-color: $white;
+    background-color: $white;
+  }
+  &:active{
+    background: none;
+    color: $white;
+    border: none;
+    border-color: $white;
+    box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.016) !important;
+  }
+  &:focus{
+    background: none;
+    color: $white;
+    border: none;
+    border-color: $white;
+    box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.016) !important;
+  }
+}
+.tabactive{
+  background-color: $purple;
+  color: $white;
+  &:hover{
+    background-color: $purpleHover;
+  }
+  &:active{
+    background-color: $purpleHover;
+  }
+  &:focus{
+    background-color: $purpleHover;
+  }
+}
+.tabnotactive{
+  background:none;
+  color: $grayBlue;
+  &:hover{
+    background-color: $purpleHover;
+  }
+  &:active{
+    background-color: $purpleHover;
+  }
+  &:focus{
+    background-color: $purpleHover;
+  }
+}
+.menutittle{
+  color: $grayBlue;
+  font-weight: 600;
+  font-size: 0.8vw;
+}
+.menutittleactive{
+  color: $white;
+}
+.col-not{
+  font-weight: 600;
+  font-size: 0.6vw;
+  background-color: $salmon;
+}
+.nav-icon{
+  filter: drop-shadow(0px 5.21739px 5.21739px rgba(0, 0, 0, 0.15));
+}
+.h6{
+  height: 5vh;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.tag{
+  padding: 5% 4%;
+  font-size: 0.7vw;
+  font-weight: bold;
+  border-radius: 0.6rem;
+  background-color: $white;
+  box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.016);
+  z-index: 1000;
+  border: none;
+  &:hover{
+    box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.016);
+    border: none;
+    border-color: $white;
+    background-color: $white;
+  }
+  &:active{
+    background-color: $purple;
+    color: $white;
+    border: none;
+    border-color: $white;
+    box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.016) !important;
+  }
+  &:focus{
+    background-color: $purple;
+    color: $white;
+    border: none;
+    border-color: $white;
+    box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+.applist{
+  max-height: 35vh;
+}
+.tags{
+  max-height: 32vh;
+}
+.searchinput{
+  text-indent: 18%;
+}
+.searchinput::placeholder{
+  background: url("../img/search.svg") no-repeat;
+  background-size: contain;
+}
+.avatarName{
+  width: 30%;
+  background-color: yellow;
+}
+.message{
+  width: 70%;
+  background-color: blue;
+}
+.avatarName{
+  .nav-icon{
+    margin-right: 20%;
+  }
+}
