@@ -8,13 +8,14 @@
 
 body {
   background-color: #F8F9FA;
+  color: #242424;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0%;
+  padding: 0;
 }
 
 .btn {
@@ -32,7 +33,7 @@ body {
 
 .profile {
   display: flex;
-  height: 15vh;
+  height: 13vh;
 }
 
 .btn-profile {
@@ -40,11 +41,13 @@ body {
   color: #242424;
   border: none;
   border-radius: 0.6rem;
-  box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
 }
 .btn-profile:hover {
   background-color: #f8f8f8;
-  box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.1);
   border: none;
   border-color: #FFF;
 }
@@ -53,14 +56,33 @@ body {
   color: #242424;
   border: none;
   border-color: #FFF;
-  box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.1) !important;
 }
 .btn-profile:focus {
   background-color: #FFF;
   color: #242424;
   border: none;
   border-color: #FFF;
-  box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.btn-profile .profile-avatar {
+  width: 25%;
+}
+.btn-profile .profile-info {
+  width: 75%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.btn-profile .profile-info .profile-info-name {
+  font-size: 0.8vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+}
+.btn-profile .profile-info .profile-info-email {
+  font-size: 0.6vw;
+  color: #929292;
 }
 
 .navbar {
@@ -69,14 +91,19 @@ body {
 }
 
 .notifications {
-  margin-top: 2%;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-.notifications > .list-group {
+.notifications .list-group {
+  max-height: 90vh;
+}
+.notifications .list-group-item {
   margin: 0.5% 0;
+  border: none;
+  padding: 1.3% 1%;
+  box-shadow: 0 7px 3px rgba(0, 0, 0, 0.016);
 }
 
 .add {
@@ -102,7 +129,7 @@ body {
   border: none;
 }
 .tab:hover {
-  box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.016);
+  box-shadow: 0 7px 3px rgba(0, 0, 0, 0.016);
   border: none;
   border-color: #FFF;
   background-color: #FFF;
@@ -112,14 +139,14 @@ body {
   color: #FFF;
   border: none;
   border-color: #FFF;
-  box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.016) !important;
+  box-shadow: 0 7px 3px rgba(0, 0, 0, 0.016) !important;
 }
 .tab:focus {
   background: none;
   color: #FFF;
   border: none;
   border-color: #FFF;
-  box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.016) !important;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.016) !important;
 }
 
 .tabactive {
@@ -182,12 +209,12 @@ body {
   font-weight: bold;
   border-radius: 0.6rem;
   background-color: #FFF;
-  box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.016);
+  box-shadow: 0 7px 3px rgba(0, 0, 0, 0.016);
   z-index: 1000;
   border: none;
 }
 .tag:hover {
-  box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.016);
+  box-shadow: 0 7px 3px rgba(0, 0, 0, 0.016);
   border: none;
   border-color: #FFF;
   background-color: #FFF;
@@ -197,14 +224,14 @@ body {
   color: #FFF;
   border: none;
   border-color: #FFF;
-  box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.016) !important;
+  box-shadow: 0 7px 3px rgba(0, 0, 0, 0.016) !important;
 }
 .tag:focus {
   background-color: #7f74ff;
   color: #FFF;
   border: none;
   border-color: #FFF;
-  box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
 .applist {
@@ -212,7 +239,7 @@ body {
 }
 
 .tags {
-  max-height: 32vh;
+  max-height: 34vh;
 }
 
 .searchinput {
@@ -225,17 +252,42 @@ body {
 }
 
 .avatarName {
-  width: 30%;
-  background-color: yellow;
+  width: 23%;
 }
 
 .message {
-  width: 70%;
-  background-color: blue;
+  width: 77%;
+  margin-left: 5%;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.message .message-title {
+  margin-right: 3%;
+}
+.message .message-text {
+  color: #929292;
+  margin-right: 3%;
+}
+.message .message-time {
+  color: #929292;
 }
 
 .avatarName .nav-icon {
-  margin-right: 20%;
+  margin-right: 4%;
+}
+
+.name {
+  margin-left: 5%;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.thrash-icon {
+  padding: 0 0.5%;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  background-color: #7f74ff;
 }
 
 /*# sourceMappingURL=style.css.map */

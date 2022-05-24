@@ -27,7 +27,15 @@
             <div class="upsidebar">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item profile lgi">
-                        <button type="button" class="btn btn-primary btn-block btn-profile">Profile</button>
+                        <button type="button" class="btn btn-primary btn-block btn-profile">
+                            <div class="profile-avatar">
+                                <img class="avatar-icon" src="../static/dashboard/img/avatar.png" th:src="@{/dashboard/img/avatar.png}" alt="">
+                            </div>
+                            <div class="profile-info">
+                                <span class="profile-info-name">Leslie Alexander</span>
+                                <span class="profile-info-email">jessica.hanson@example.com</span>
+                            </div>
+                        </button>
                     </li>
                     <li class="list-group-item lgi">
                         <ul data-simplebar class="list-group applist" id="applist">
@@ -198,24 +206,136 @@
                 </div>
             </nav>
             <div class="container-fluid notifications">
-
-                <ul class="list-group">
+                <ul data-simplebar class="list-group">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         <div class="avatarName">
-                            <img class="nav-icon" src="../static/dashboard/img/nav/social/Figma_Alt.png" th:src="@{/dashboard/img/nav/social/Figma_Alt.png}" alt="" width="12%">
-                            <img class="avatar-icon" src="../static/dashboard/img/avatar.png" th:src="@{/dashboard/img/avatar.png}" alt="" width="11%">
-                            Ara
+                            <img class="nav-icon" src="../static/dashboard/img/nav/social/Figma_Alt.png" th:src="@{/dashboard/img/nav/social/Figma_Alt.png}" alt="" width="13%">
+                            <img class="avatar-icon" src="../static/dashboard/img/avatar1.png" th:src="@{/dashboard/img/avatar1.png}" alt="" width="12%">
+                            <span class="name">Cameron Williamson</span>
                         </div>
                         <div class="message">
-                            Arara
+                            <span class="message-title">New mention in #tiger-team-private</span>
+                            <span class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vestibulum, ut</span>
+                            <span class="message-time">1 h</span>
                         </div>
-                        <span class="badge bg-primary rounded-pill">10</span>
+                        <img class="thrash-icon" src="../static/dashboard/img/thrash.svg" th:src="@{/dashboard/img/thrash.svg}" alt="">
                     </li>
-                </ul>
-                <ul class="list-group">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        A list item
-                        <span class="badge bg-primary rounded-pill">14</span>
+                        <div class="avatarName">
+                            <img class="nav-icon" src="../static/dashboard/img/nav/social/Notion_Alt.png" th:src="@{/dashboard/img/nav/social/Notion_Alt.png}" alt="" width="13%">
+                            <img class="avatar-icon" src="../static/dashboard/img/avatar2.png" th:src="@{/dashboard/img/avatar2.png}" alt="" width="12%">
+                            <span class="name">Kathryn Murphy</span>
+                        </div>
+                        <div class="message">
+                            <span class="message-title">New mention in #tiger-team-private</span>
+                            <span class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vestibulum, ut</span>
+                            <span class="message-time">1 h</span>
+                        </div>
+                        <img class="thrash-icon" src="../static/dashboard/img/thrash.svg" th:src="@{/dashboard/img/thrash.svg}" alt="">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="avatarName">
+                            <img class="nav-icon" src="../static/dashboard/img/nav/social/Trello.png" th:src="@{/dashboard/img/nav/social/Trello.png}" alt="" width="13%">
+                            <img class="avatar-icon" src="../static/dashboard/img/avatar3.png" th:src="@{/dashboard/img/avatar3.png}" alt="" width="12%">
+                            <span class="name">Kristin Watson</span>
+                        </div>
+                        <div class="message">
+                            <span class="message-title">New mention in #tiger-team-private</span>
+                            <span class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vestibulum, ut</span>
+                            <span class="message-time">1 h</span>
+                        </div>
+                        <img class="thrash-icon" src="../static/dashboard/img/thrash.svg" th:src="@{/dashboard/img/thrash.svg}" alt="">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="avatarName">
+                            <img class="nav-icon" src="../static/dashboard/img/nav/social/Figma_Alt.png" th:src="@{/dashboard/img/nav/social/Figma_Alt.png}" alt="" width="13%">
+                            <img class="avatar-icon" src="../static/dashboard/img/avatar4.png" th:src="@{/dashboard/img/avatar4.png}" alt="" width="12%">
+                            <span class="name">Courtney Henry</span>
+                        </div>
+                        <div class="message">
+                            <span class="message-title">New mention in #tiger-team-private</span>
+                            <span class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vestibulum, ut</span>
+                            <span class="message-time">1 h</span>
+                        </div>
+                        <img class="thrash-icon" src="../static/dashboard/img/thrash.svg" th:src="@{/dashboard/img/thrash.svg}" alt="">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="avatarName">
+                            <img class="nav-icon" src="../static/dashboard/img/nav/social/Figma_Alt.png" th:src="@{/dashboard/img/nav/social/Figma_Alt.png}" alt="" width="13%">
+                            <img class="avatar-icon" src="../static/dashboard/img/avatar5.png" th:src="@{/dashboard/img/avatar5.png}" alt="" width="12%">
+                            <span class="name">Ronald Richards</span>
+                        </div>
+                        <div class="message">
+                            <span class="message-title">New mention in #tiger-team-private</span>
+                            <span class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vestibulum, ut</span>
+                            <span class="message-time">1 h</span>
+                        </div>
+                        <img class="thrash-icon" src="../static/dashboard/img/thrash.svg" th:src="@{/dashboard/img/thrash.svg}" alt="">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="avatarName">
+                            <img class="nav-icon" src="../static/dashboard/img/nav/social/Notion_Alt.png" th:src="@{/dashboard/img/nav/social/Notion_Alt.png}" alt="" width="13%">
+                            <img class="avatar-icon" src="../static/dashboard/img/avatar6.png" th:src="@{/dashboard/img/avatar6.png}" alt="" width="12%">
+                            <span class="name">Wade Warren</span>
+                        </div>
+                        <div class="message">
+                            <span class="message-title">New mention in #tiger-team-private</span>
+                            <span class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vestibulum, ut</span>
+                            <span class="message-time">1 h</span>
+                        </div>
+                        <img class="thrash-icon" src="../static/dashboard/img/thrash.svg" th:src="@{/dashboard/img/thrash.svg}" alt="">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="avatarName">
+                            <img class="nav-icon" src="../static/dashboard/img/nav/social/Figma_Alt.png" th:src="@{/dashboard/img/nav/social/Figma_Alt.png}" alt="" width="13%">
+                            <img class="avatar-icon" src="../static/dashboard/img/avatar7.png" th:src="@{/dashboard/img/avatar7.png}" alt="" width="12%">
+                            <span class="name">Marvin McKinney</span>
+                        </div>
+                        <div class="message">
+                            <span class="message-title">New mention in #tiger-team-private</span>
+                            <span class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vestibulum, ut</span>
+                            <span class="message-time">1 h</span>
+                        </div>
+                        <img class="thrash-icon" src="../static/dashboard/img/thrash.svg" th:src="@{/dashboard/img/thrash.svg}" alt="">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="avatarName">
+                            <img class="nav-icon" src="../static/dashboard/img/nav/social/Trello.png" th:src="@{/dashboard/img/nav/social/Trello.png}" alt="" width="13%">
+                            <img class="avatar-icon" src="../static/dashboard/img/avatar8.png" th:src="@{/dashboard/img/avatar8.png}" alt="" width="12%">
+                            <span class="name">Ralph Edwards</span>
+                        </div>
+                        <div class="message">
+                            <span class="message-title">New mention in #tiger-team-private</span>
+                            <span class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vestibulum, ut</span>
+                            <span class="message-time">1 h</span>
+                        </div>
+                        <img class="thrash-icon" src="../static/dashboard/img/thrash.svg" th:src="@{/dashboard/img/thrash.svg}" alt="">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="avatarName">
+                            <img class="nav-icon" src="../static/dashboard/img/nav/social/Notion_Alt.png" th:src="@{/dashboard/img/nav/social/Notion_Alt.png}" alt="" width="13%">
+                            <img class="avatar-icon" src="../static/dashboard/img/avatar9.png" th:src="@{/dashboard/img/avatar9.png}" alt="" width="12%">
+                            <span class="name">Jenny Wilson</span>
+                        </div>
+                        <div class="message">
+                            <span class="message-title">New mention in #tiger-team-private</span>
+                            <span class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vestibulum, ut</span>
+                            <span class="message-time">1 h</span>
+                        </div>
+                        <img class="thrash-icon" src="../static/dashboard/img/thrash.svg" th:src="@{/dashboard/img/thrash.svg}" alt="">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="avatarName">
+                            <img class="nav-icon" src="../static/dashboard/img/nav/social/Trello.png" th:src="@{/dashboard/img/nav/social/Trello.png}" alt="" width="13%">
+                            <img class="avatar-icon" src="../static/dashboard/img/avatar10.png" th:src="@{/dashboard/img/avatar10.png}" alt="" width="12%">
+                            <span class="name">Annette Black</span>
+                        </div>
+                        <div class="message">
+                            <span class="message-title">New mention in #tiger-team-private</span>
+                            <span class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vestibulum, ut</span>
+                            <span class="message-time">1 h</span>
+                        </div>
+                        <img class="thrash-icon" src="../static/dashboard/img/thrash.svg" th:src="@{/dashboard/img/thrash.svg}" alt="">
                     </li>
                 </ul>
             </div>
