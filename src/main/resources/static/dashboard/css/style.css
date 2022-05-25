@@ -89,6 +89,16 @@ body {
   font-weight: 700;
   padding: 1% 0;
 }
+.navbar .navbar-icons {
+  width: 10%;
+  margin-left: 51%;
+}
+.navbar .navbar-icons .navbar-icons-settings {
+  margin-left: 15%;
+}
+.navbar .navbar-icons .navbar-icons-FAQ {
+  margin-right: 10%;
+}
 
 .notifications {
   display: flex;

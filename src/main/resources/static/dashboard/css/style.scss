@@ -88,6 +88,16 @@ body{
 .navbar{
   font-weight: 700;
   padding: 1% 0;
+  .navbar-icons{
+    width: 10%;
+    margin-left: 51%;
+    .navbar-icons-settings{
+      margin-left: 15%;
+    }
+    .navbar-icons-FAQ{
+      margin-right: 10%;
+    }
+  }
 }
 .notifications{
   display: flex;
